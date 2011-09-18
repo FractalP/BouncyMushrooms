@@ -1,6 +1,6 @@
 ## Bouncy Mushrooms
 
-A Bukkit plugin that makes players able to bounce on large mushrooms!
+Server plugin and client mod that makes players able to bounce on large mushrooms!
 
 ### Features:
 - Landing on a large mushroom will cancel out any fall damage.
