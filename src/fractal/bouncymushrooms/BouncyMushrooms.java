@@ -16,7 +16,7 @@ public class BouncyMushrooms extends JavaPlugin {
 	
 	public void onDisable() {
 		this.getServer().getScheduler().cancelTasks(this); // cancel the async task scheduled below
-        System.out.println("Bouncy Mushrooms de-bouncified");
+		System.out.println("Bouncy Mushrooms de-bouncified");
     }
 	
 	public void onEnable() {
@@ -25,7 +25,6 @@ public class BouncyMushrooms extends JavaPlugin {
 		System.out.println("Mushrooms are now bouncy!");
 		this.getServer().getScheduler().scheduleAsyncRepeatingTask(this, new Runnable () {
 			public void run() {
-				//System.out.println("Checking for bouncing!");
 				for (World w : getServer().getWorlds()) {
 					for (Player p : w.getPlayers()) {
 						if (p.isSneaking()) {
